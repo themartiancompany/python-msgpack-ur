@@ -13,7 +13,7 @@ license=('Apache-2.0')
 
 depends=('python')
 makedepends=('cython' 'python-setuptools' 'python-build' 'python-installer' 'python-wheel')
-checkdepends=('python-pytest' 'python-six')
+checkdepends=('python-pytest')
 
 source=(msgpack-python-$pkgver.tar.gz::https://github.com/msgpack/msgpack-python/archive/v$pkgver.tar.gz)
 
