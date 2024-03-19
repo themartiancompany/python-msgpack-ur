@@ -8,7 +8,7 @@ pkgdesc='MessagePack serializer implementation for Python'
 
 url='https://github.com/msgpack/msgpack-python'
 arch=('x86_64')
-license=('Apache')
+license=('Apache-2.0')
 
 
 depends=('python')
