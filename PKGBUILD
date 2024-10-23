@@ -6,6 +6,12 @@
 # Contributor: Sébastien "Seblu" Luttringer
 
 _py=python
+_pyver="$( \
+  "${_py}" \
+    -V | \
+    awk \
+      '{print $2}')"
+_pymajver="${_pyver%.*}"
 _pkg=msgpack
 _pkgname="${_pkg}-${_py}"
 pkgname="${_py}-${_pkg}"
@@ -29,7 +35,7 @@ license=(
   'Apache-2.0'
 )
 depends=(
-  'python'
+  "${_py}>=${_pymajver}"
 )
 makedepends=(
   'cython'
